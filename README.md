@@ -1,16 +1,21 @@
+![GitHub top language](https://img.shields.io/github/languages/top/hungtrannam/Clust_ProbDenFunc)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/hungtrannam/Clust_ProbDenFunc )
+[![GitHub contributors](https://img.shields.io/github/contributors/hungtrannam/Clust_ProbDenFunc)](https://github.com/hungtrannam/Clust_ProbDenFunc/graphs/contributors)
+
 # ClustDenFunc
 
-This repository contains Improved of Fuzzy C-means (FCM), Improved Fuzzy C-means (IFCM), and K-means clustering models. These models are built using Python and leverage the `pydantic` library for data validation and configuration management.
+This repository contains improved implementations of Fuzzy C-means (FCM), Improved Fuzzy C-means (IFCM), and K-means clustering models. These models are built using Python and leverage the `pydantic` library for data validation and configuration management.
 
-## Installation
+## 📦 Installation
 
-To install the necessary packages, you can use the `requirements.txt` file:
+To install the necessary packages, use the `requirements.txt` file:
 
 ```bash
 pip install -r requirements.txt
+
 ```
 
-## Usage
+## 🚀 Usage
 
 ``` python
 import pandas as pd
@@ -37,7 +42,7 @@ fcm.fit(data)
 predictions = fcm.predict(new_data)
 ```
 
-## Model Parameters
+## ⚙️ Model Parameters
 
   *  numClust: Number of clusters (default: 5)
   *  maxIter: Maximum number of iterations (default: 150)
@@ -49,7 +54,7 @@ predictions = fcm.predict(new_data)
   *  distance: Distance metric (overlapCoef, Bhattacharyya, Hellinger, L1-distance, or a custom function)
   *  thetaIni: Initialization method (random, partition, overlap, or kmeans++)
 
-## Method
+## 🛠️ Method
   *  fit(Data: pd.DataFrame): Train the model with the provided data.
   *  predict(Data: pd.DataFrame) -> NDArray: Predict cluster membership for new data.
   *  defuzzication(Data: pd.DataFrame) -> NDArray: Predict the closest cluster each sample belongs to.
@@ -62,10 +67,10 @@ predictions = fcm.predict(new_data)
  *   L1-distance: L1 distance (Manhattan distance).
 
 
-## References
+## 📚 References
 
-  *  Fuzzy C-means (FCM): J.C. Bezdek, Pattern Recognition with Fuzzy Objective Function Algorithms, Springer, 1981.
-  *  K-means: J. MacQueen, "Some Methods for classification and Analysis of Multivariate Observations," in Proceedings of 5th Berkeley Symposium on Mathematical Statistics and Probability, 1967.
+  *  **Fuzzy C-means (FCM):** J.C. Bezdek, Pattern Recognition with Fuzzy Objective Function Algorithms, Springer, 1981.
+  *  **K-means:** J. MacQueen, "Some Methods for classification and Analysis of Multivariate Observations," in Proceedings of 5th Berkeley Symposium on Mathematical Statistics and Probability, 1967.
 
 
 
