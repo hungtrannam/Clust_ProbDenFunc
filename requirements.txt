@@ -1,0 +1,11 @@
+matplotlib
+numpy
+scipy
+setuptools
+seaborn
+pydantic
+tqdm
+typing-extensions
+joblib
+pandas
+scikit-learn
